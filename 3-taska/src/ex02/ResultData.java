@@ -1,23 +1,20 @@
 package ex02;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 public class ResultData implements Serializable {
     private static final long serialVersionUID = 1L;
-    private final int decimalNumber;
-    private transient String binaryRepresentation;
-    private int transitionsCount;
-    private static List<ResultData> history = new ArrayList<>();
+    protected final int decimalNumber;
+    protected transient String binaryRepresentation;
+    protected int transitionsCount;
 
     public ResultData(int decimalNumber) {
         this.decimalNumber = decimalNumber;
         calculateBinaryAndTransitions();
-        history.add(this);
     }
 
-    private void calculateBinaryAndTransitions() {
+    protected void calculateBinaryAndTransitions() {
+        // (оригінальна реалізація з попереднього коду)
         if (decimalNumber == 0) {
             binaryRepresentation = "0";
             transitionsCount = 0;
@@ -43,7 +40,6 @@ public class ResultData implements Serializable {
         }
     }
 
-    // Геттери
     public int getDecimalNumber() {
         return decimalNumber;
     }
@@ -56,11 +52,9 @@ public class ResultData implements Serializable {
         return transitionsCount;
     }
 
-    public static List<ResultData> getHistory() {
-        return new ArrayList<>(history);
-    }
-
-    public static void clearHistory() {
-        history.clear();
+    @Override
+    public String toString() {
+        return String.format("Decimal: %d, Binary: %s, Transitions: %d",
+                decimalNumber, getBinaryRepresentation(), transitionsCount);
     }
 }

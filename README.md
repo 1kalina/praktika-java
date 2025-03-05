@@ -1,6 +1,6 @@
 # praktika-java
 
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://fuzzy-broccoli-57x7j74vw7g37xqx.github.dev/)
+[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://musical-space-chainsaw-6x4xqxrvj4jf4v99.github.dev/)
 
 ---
 
@@ -40,6 +40,16 @@ public class main
 8. `Transient` поля не зберігаються; після десеріалізації вони отримують значення за замовчуванням (0, false, null).  
 9. `Static` поля не серіалізуються, адже належать класу, а не об’єкту.  
 10. **javadoc** – інструмент для генерації HTML-документації з Java-коду за допомогою спеціальних коментарів та тегів.
+
+---
+
+## Taska 3
+
+![5 task 3](https://github.com/1kalina/praktika-java/blob/main/images/3-taska/5.png)
+
+![9753 task 3](https://github.com/1kalina/praktika-java/blob/main/images/3-taska/9753.png)
+
+![12345 task 3](https://github.com/1kalina/praktika-java/blob/main/images/3-taska/12345.png)
 
 ---
 

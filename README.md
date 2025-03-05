@@ -4,7 +4,7 @@
 
 ---
 
-## Taska 1
+## [Taska 1](https://github.com/1kalina/praktika-java/tree/47701b0ccc9771b87bd4dcc488a034c90f80ed5f/1-taska/src)
 
 ```Java
 public class main 
@@ -20,7 +20,7 @@ public class main
 
 ---
 
-## Taska 2
+## [Taska 2](https://github.com/1kalina/praktika-java/tree/47701b0ccc9771b87bd4dcc488a034c90f80ed5f/2-taska/src/ex02)
 Підрахувати кількість чергувань 0 та 1 у двійковому поданні заданого десяткового числа.
 
 ![5 task 2](https://github.com/1kalina/praktika-java/blob/main/images/2-taska/5.png)
@@ -43,7 +43,7 @@ public class main
 
 ---
 
-## Taska 3
+## [Taska 3](https://github.com/1kalina/praktika-java/tree/47701b0ccc9771b87bd4dcc488a034c90f80ed5f/3-taska/src/ex02)
 
 ![5 task 3](https://github.com/1kalina/praktika-java/blob/main/images/3-taska/5.png)
 

@@ -1,26 +1,22 @@
-package ex01;
+package ex02;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
-/**
- * Клас для зберігання вхідного числа, його двійкового представлення та кількості чергувань 0 і 1.
- * @author Student
- * @version 1.0
- */
 public class ResultData implements Serializable {
     private static final long serialVersionUID = 1L;
     private final int decimalNumber;
-    private transient String binaryRepresentation; // transient поле
+    private transient String binaryRepresentation;
     private int transitionsCount;
+    private static List<ResultData> history = new ArrayList<>();
 
     public ResultData(int decimalNumber) {
         this.decimalNumber = decimalNumber;
         calculateBinaryAndTransitions();
+        history.add(this);
     }
 
-    /**
-     * Обчислює двійкове представлення та кількість чергувань.
-     */
     private void calculateBinaryAndTransitions() {
         if (decimalNumber == 0) {
             binaryRepresentation = "0";
@@ -36,7 +32,6 @@ public class ResultData implements Serializable {
         }
         binaryRepresentation = binary.toString();
         
-        // Підрахунок переходів
         transitionsCount = 0;
         char prev = binaryRepresentation.charAt(0);
         for (int i = 1; i < binaryRepresentation.length(); i++) {
@@ -61,9 +56,11 @@ public class ResultData implements Serializable {
         return transitionsCount;
     }
 
-    @Override
-    public String toString() {
-        return String.format("Decimal: %d, Binary: %s, Transitions: %d",
-                decimalNumber, getBinaryRepresentation(), transitionsCount);
+    public static List<ResultData> getHistory() {
+        return new ArrayList<>(history);
+    }
+
+    public static void clearHistory() {
+        history.clear();
     }
 }

@@ -1,38 +1,38 @@
-package ex01;
+package ex02;
 
-import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Test;
+import java.util.List;
 
-/**
- * Тестування класу Calculator.
- * @author Student
- * @version 1.0
- */
 public class CalculatorTest {
     @Test
-    public void testTransitionsCount() {
-        // Перевірка для числа 5 (101)
-        Calculator calculator = new Calculator(5);
-        assertEquals(2, calculator.getResultData().getTransitionsCount());
-        
-        // Перевірка для числа 7 (111)
-        calculator = new Calculator(7);
-        assertEquals(0, calculator.getResultData().getTransitionsCount());
-        
-        // Перевірка для числа 10 (1010)
-        calculator = new Calculator(10);
-        assertEquals(3, calculator.getResultData().getTransitionsCount());
+    public void testHistory() {
+        ResultData.clearHistory();
+        new ResultData(5);
+        new ResultData(10);
+        List<ResultData> history = ResultData.getHistory();
+        assertEquals(2, history.size());
+        assertEquals(5, history.get(0).getDecimalNumber());
     }
-    
+
+    @Test
+    public void testFormatter() {
+        TextResultFormatter formatter = new TextResultFormatter();
+        ResultData data = new ResultData(9);
+        String expected = "Decimal: 9 | Binary: 1001 | Transitions: 2";
+        assertEquals(expected, formatter.format(data));
+    }
+
     @Test
     public void testSerialization() throws Exception {
-        Calculator calculator = new Calculator(9);
+        ResultData.clearHistory();
+        new ResultData(9);
+        Calculator calculator = new Calculator(new TextFormatterFactory());
         calculator.save();
-        
-        Calculator restoredCalculator = new Calculator(0);
-        restoredCalculator.restore();
-        
-        assertEquals(9, restoredCalculator.getResultData().getDecimalNumber());
-        assertEquals(2, restoredCalculator.getResultData().getTransitionsCount());
+
+        calculator.restore();
+        List<ResultData> restored = ResultData.getHistory();
+        assertEquals(1, restored.size());
+        assertEquals(9, restored.get(0).getDecimalNumber());
     }
 }

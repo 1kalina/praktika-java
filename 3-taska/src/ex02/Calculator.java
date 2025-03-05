@@ -1,47 +1,35 @@
-package ex01;
+package ex02;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.List;
 
-/**
- * Клас для обчислення кількості чергувань та серіалізації даних.
- * @author Student
- * @version 1.0
- */
 public class Calculator {
     private static final String FILE_NAME = "data.ser";
-    private ResultData resultData;
+    private ResultFormatter formatter;
 
-    public Calculator(int decimalNumber) {
-        this.resultData = new ResultData(decimalNumber);
+    public Calculator(ResultFormatterFactory factory) {
+        this.formatter = factory.createFormatter();
     }
 
-    /**
-     * Зберігає дані у файл.
-     * @throws IOException якщо виникає помилка запису
-     */
     public void save() throws IOException {
         try (ObjectOutputStream oos = new ObjectOutputStream(Files.newOutputStream(Path.of(FILE_NAME)))) {
-            oos.writeObject(resultData);
+            oos.writeObject(ResultData.getHistory());
         }
     }
 
-    /**
-     * Відновлює дані з файлу.
-     * @throws IOException якщо файл не знайдено
-     * @throws ClassNotFoundException якщо клас не знайдено
-     */
     public void restore() throws IOException, ClassNotFoundException {
         try (ObjectInputStream ois = new ObjectInputStream(Files.newInputStream(Path.of(FILE_NAME)))) {
-            resultData = (ResultData) ois.readObject();
+            List<ResultData> restored = (List<ResultData>) ois.readObject();
+            ResultData.clearHistory();
+            ResultData.getHistory().addAll(restored);
         }
     }
 
-    // Геттер
-    public ResultData getResultData() {
-        return resultData;
+    public String getFormattedResults() {
+        return formatter.formatAll(ResultData.getHistory());
     }
 }

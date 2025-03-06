@@ -53,3 +53,12 @@ public class main
 
 ---
 
+## [Taska 4](https://github.com/1kalina/praktika-java/tree/47701b0ccc9771b87bd4dcc488a034c90f80ed5f/4-taska/src/ex02)
+
+![5 task 4](https://github.com/1kalina/praktika-java/blob/main/images/4-taska/5.png)
+
+![9753 task 4](https://github.com/1kalina/praktika-java/blob/main/images/4-taska/9753.png)
+
+![12345 task 4](https://github.com/1kalina/praktika-java/blob/main/images/4-taska/12345.png)
+
+---

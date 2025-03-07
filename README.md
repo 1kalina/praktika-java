@@ -62,3 +62,26 @@ public class main
 ![12345 task 4](https://github.com/1kalina/praktika-java/blob/main/images/4-taska/12345.png)
 
 ---
+
+## [Taska 4](https://github.com/1kalina/praktika-java/tree/main/5-taska/src/ex02)
+
+Поправлений бінарне відображеня числа у відновлених даних
+
+List:
+
+![5 list task 5](https://github.com/1kalina/praktika-java/blob/main/images/5-taska/5-list.png)
+
+![9753 list task 5](https://github.com/1kalina/praktika-java/blob/main/images/5-taska/9753-list.png)
+
+![12345 list task 5](https://github.com/1kalina/praktika-java/blob/main/images/5-taska/12345-list.png)
+
+
+Table:
+
+![5 table task 5](https://github.com/1kalina/praktika-java/blob/main/images/5-taska/5-table.png)
+
+![9753 table task 5](https://github.com/1kalina/praktika-java/blob/main/images/5-taska/9753-table.png)
+
+![12345 table task 5](https://github.com/1kalina/praktika-java/blob/main/images/5-taska/12345-table.png)
+
+---

@@ -63,9 +63,9 @@ public class main
 
 ---
 
-## [Taska 4](https://github.com/1kalina/praktika-java/tree/main/5-taska/src/ex02)
+## [Taska 5](https://github.com/1kalina/praktika-java/tree/main/5-taska/src/ex02)
 
-Поправлений бінарне відображеня числа у відновлених даних
+**Поправлене бінарне відображеня числа у відновлених даних**
 
 List:
 
@@ -85,3 +85,4 @@ Table:
 ![12345 table task 5](https://github.com/1kalina/praktika-java/blob/main/images/5-taska/12345-table.png)
 
 ---
+

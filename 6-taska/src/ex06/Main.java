@@ -24,6 +24,6 @@ public class Main {
     }
 
     private static int[] generateArray(int size) {
-        return new Random().ints(size, 0, 15).toArray();
+        return new Random().ints(size, 0, 150).toArray();
     }
 }

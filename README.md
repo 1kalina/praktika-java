@@ -86,3 +86,12 @@ Table:
 
 ---
 
+## [Taska 6](https://github.com/1kalina/praktika-java/tree/main/6-taska/src/ex06)
+
+Відображається в довільному порядку через паралельність виконання. Яка задача швидше виконалась, результат тієї і виводиться на екран
+
+![1 try](https://github.com/1kalina/praktika-java/blob/main/images/6-taska/1.png)
+
+![2 try](https://github.com/1kalina/praktika-java/blob/main/images/6-taska/2.png)
+
+![3 try](https://github.com/1kalina/praktika-java/blob/main/images/6-taska/3.png)

@@ -43,7 +43,7 @@ public class main
 
 ---
 
-## [Taska 3](https://github.com/1kalina/praktika-java/tree/main/3-taska/src/ex02)
+## [Taska 3](https://github.com/1kalina/praktika-java/tree/main/3-taska/src/ex03)
 
 ![5 task 3](https://github.com/1kalina/praktika-java/blob/main/images/3-taska/5.png)
 
@@ -53,7 +53,7 @@ public class main
 
 ---
 
-## [Taska 4](https://github.com/1kalina/praktika-java/tree/main/4-taska/src/ex02)
+## [Taska 4](https://github.com/1kalina/praktika-java/tree/main/4-taska/src/ex04)
 
 ![5 task 4](https://github.com/1kalina/praktika-java/blob/main/images/4-taska/5.png)
 
@@ -63,7 +63,7 @@ public class main
 
 ---
 
-## [Taska 5](https://github.com/1kalina/praktika-java/tree/main/5-taska/src/ex02)
+## [Taska 5](https://github.com/1kalina/praktika-java/tree/main/5-taska/src/ex05)
 
 **Поправлене бінарне відображеня числа у відновлених даних**
 
@@ -95,3 +95,36 @@ Table:
 ![2 try](https://github.com/1kalina/praktika-java/blob/main/images/6-taska/2.png)
 
 ![3 try](https://github.com/1kalina/praktika-java/blob/main/images/6-taska/3.png)
+
+---
+
+## [Taska 7](https://github.com/1kalina/praktika-java/tree/main/7-taska/src/ex07)
+
+Графічний інтерфейс
+
+### Main Window
+![main window](https://github.com/1kalina/praktika-java/blob/main/images/7-taska/main.png)
+
+### Task 1 Window
+![task 1](https://github.com/1kalina/praktika-java/blob/main/images/7-taska/task1.png)
+
+### Task 2 Window
+![task 2](https://github.com/1kalina/praktika-java/blob/main/images/7-taska/task2.png)
+
+### Task 3 Window
+![task 3](https://github.com/1kalina/praktika-java/blob/main/images/7-taska/task3-save.png)
+
+![task 3](https://github.com/1kalina/praktika-java/blob/main/images/7-taska/task3-restore.png)
+
+### Task 4 Window
+![task 4](https://github.com/1kalina/praktika-java/blob/main/images/7-taska/task4-save.png)
+
+![task 4](https://github.com/1kalina/praktika-java/blob/main/images/7-taska/task4-restore.png)
+
+### Task 5 Window
+![task 5](https://github.com/1kalina/praktika-java/blob/main/images/7-taska/task5-text.png)
+
+![task 5](https://github.com/1kalina/praktika-java/blob/main/images/7-taska/task5-table.png)
+
+### Task 6 Window
+![task 6](https://github.com/1kalina/praktika-java/blob/main/images/7-taska/task6.png)
